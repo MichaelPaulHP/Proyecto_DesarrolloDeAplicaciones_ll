@@ -1,0 +1,43 @@
+﻿#cuerpo{
+    width:100%;
+    background-color:#222;
+}
+/*0; 150; 136*/
+/*CONTENIDO*/
+#portfolio {  
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.cuadrado{
+    background-color:rgb(23, 23, 23);
+    margin:10px 5px;
+    color:#999;
+    cursor:pointer;
+}
+/*article{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-content:center;
+}*/
+.descripcion{
+    
+    height:20%;
+    width:100%;
+    bottom:0;
+    
+    background-color:rgb(18, 18, 18);
+    
+    /*background: rgba(255,255,255,.9);*/
+    
+}
+figure{
+    width:100%;
+    height:80%;
+    border-style:solid;
+    border-color:red;
+}

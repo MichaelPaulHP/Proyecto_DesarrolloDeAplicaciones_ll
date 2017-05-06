@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="inicio.master.cs" Inherits="Proyecto_DesarrolloDeAplicaciones_ll.inicio" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>HolaMundo</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--MENU-->
+    <link rel="stylesheet" href="HOME/ESTILOS/estilos_menu.css"/>
+	<script src="HOME/JS/jquery_menu.js"></script>
+	<script src="HOME/JS/main_menu.js"></script>
+    <!--SLIDE-->
+	<link rel="stylesheet" href="estilos_slide.css"  type="text/css"/>
+	<script src="HOME/JS/slidejs.js"></script>
+	<script src="HOME/JS/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+            touch: true,
+            pauseOnAction: false,
+            pauseOnHover: false,
+        });
+      });
+    </script>
+    <!--PIE DE PAGINA-->
+    <link rel="stylesheet" href="HOME/ESTILOS/estilos_pie.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+
+        <header>
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-list2"></span>Menú</a>
+		</div>
+		<nav>
+			<ul>
+                <li id="nombre_empresa">PROYECTO FASE I</li>
+				<li><a href="Default.aspx"><span class="icon-house"></span>INICIO</a></li>
+				<li class="submenu">
+					<a href="comprar.aspx"><span class="icon-rocket"></span>PRODUCTOS<span class="caret icon-arrow-down6"></span></a>
+					<ul class="children">
+						<li><a href="#">PORTATILES <span class="icon-dot"></span></a></li>
+						<li><a href="#">PC ESCRITORIO<span class="icon-dot"></span></a></li>
+						<li><a href="#">ALL IN ONE<span class="icon-dot"></span></a></li>
+					</ul>
+				</li>
+               <li class="submenu">
+					<a href="#"><span class="icon-rocket"></span>COMPONENTES<span class="caret icon-arrow-down6"></span></a>
+					<ul class="children">
+						<li><a href="#">PROCESADORES<span class="icon-dot"></span></a></li>
+						<li><a href="#">PLACAS MADRE<span class="icon-dot"></span></a></li>
+                        <li><a href="#">TARJETAS DE VIDEO<span class="icon-dot"></span></a></li>
+						<li><a href="#">MEMORIAS<span class="icon-dot"></span></a></li>
+                        <li><a href="#">LECTORAS<span class="icon-dot"></span></a></li>
+                        <li><a href="#">PANTALLAS<span class="icon-dot"></span></a></li>
+                        <li><a href="#">OTROS<span class="icon-dot"></span></a></li>
+					</ul>
+				</li>
+                 <li class="submenu">
+					<a href="#"><span class="icon-rocket"></span>SERVICIOS<span class="caret icon-arrow-down6"></span></a>
+					<ul class="children">
+						<li><a href="#">MANTENIMIENTO<span class="icon-dot"></span></a></li>
+						<li><a href="#">ARMAR PC<span class="icon-dot"></span></a></li>
+					</ul>
+				</li>
+                <li><a href="#"><span class="icon-earth"></span>QUIENES SOMOS</a></li>
+				<li><a href="contacto.aspx" ><span class="icon-mail"></span>CONTACTANOS</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="HOME/IMAGENES/1.jpg" alt="">
+				<section class="flex-caption">
+					<p>LOKO987 :V</p>
+				</section>
+			</li>
+			<li>
+				<img src="HOME/IMAGENES/2.jpg" alt="">
+				<section class="flex-caption">
+					<p>JOAN DIAZ</p>
+				</section>
+			</li>
+			<li>
+				<img src="HOME/IMAGENES/3.jpg" alt="">
+				<section class="flex-caption">
+					<p>MICHAEL HUAHUASONCCO</p>
+				</section>
+			</li>
+            <li>
+				<img src="HOME/IMAGENES/4.jpg" alt="">
+				<section class="flex-caption">
+					<p>LOKO987</p>
+				</section>
+			</li>
+            <li>
+				<img src="HOME/IMAGENES/5.jpg" alt="">
+				<section class="flex-caption">
+					<p>JOAN DIAZ</p>
+				</section>
+			</li>
+            <li>
+				<img src="HOME/IMAGENES/6.jpg" alt="">
+				<section class="flex-caption">
+					<p>MICHAEL HUAHUASONCCO</p>
+				</section>
+			</li>
+		</ul>
+	</div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
